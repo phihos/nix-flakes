@@ -196,6 +196,8 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # systemctl status nixos-upgrade.timer
+  # systemctl status nixos-upgrade.service
   system.autoUpgrade = {
     enable = true;
     flake = inputs.self.outPath;
