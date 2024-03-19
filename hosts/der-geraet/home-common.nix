@@ -25,5 +25,25 @@
     "org/gnome/desktop/calendar" = {
       show-weekdate = true;
     };
+    "org/gnome/shell" = {
+      enabled-extensions = [
+        "appindicatorsupport@rgcjonas.gmail.com"
+        "caffeine@patapon.info"
+        "clipboard-indicator@tudmotu.com"
+        "dash-to-dock@micxgx.gmail.com"
+        "utcclock@injcristianrojas.github.com"
+      ];
+    };
+    "org/gnome/shell/extensions/caffeine" = {
+      indicator-position-max = 2;
+    };
+    "org/gnome/shell/extensions/dash-to-dock" = {
+      dock-position = "LEFT";
+      dock-fixed = true;
+      extend-height = true;
+      show-icons-emblems = false;
+      scroll-action = "cycle-windows";
+      custom-theme-shrink = true;
+    };
   };
 }
