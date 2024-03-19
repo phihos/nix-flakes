@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   # This value determines the Home Manager release that your configuration is
@@ -35,7 +36,7 @@
       ];
     };
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 2;
+      indicator-position-max = lib.hm.gvariant.mkUint32 2;
     };
     "org/gnome/shell/extensions/dash-to-dock" = {
       dock-position = "LEFT";
