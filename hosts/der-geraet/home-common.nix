@@ -21,7 +21,7 @@
       color-scheme = "prefer-dark";
     };
     "org/gnome/desktop/session" = {
-      idle-delay = 0;
+      idle-delay = lib.hm.gvariant.mkUint32 0;
     };
     "org/gnome/desktop/calendar" = {
       show-weekdate = true;
@@ -36,7 +36,7 @@
       ];
     };
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = lib.hm.gvariant.mkUint32 2;
+      indicator-position-max = 2;
     };
     "org/gnome/shell/extensions/dash-to-dock" = {
       dock-position = "LEFT";
