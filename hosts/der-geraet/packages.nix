@@ -9,6 +9,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  # Search "programs.<name>" https://search.nixos.org/options before.
   environment.systemPackages = with pkgs; [
     pkgs.yubioath-flutter
     inputs.nix-software-center.packages.${system}.nix-software-center
@@ -19,7 +20,6 @@
     jetbrains.idea-ultimate
     jetbrains.goland
     jetbrains.ruby-mine
-    git
     ruby
     rubyPackages.ffi
     kubectl
@@ -38,7 +38,6 @@
     gnome.networkmanager-openvpn
     gnomeExtensions.dash-to-dock
     zoom-us
-    wireshark
     gnome.gnome-tweaks
     pdk
     inputs.alejandra.defaultPackage.${system}
@@ -53,6 +52,8 @@
     })
   ];
 
+  programs.wireshark.enable = true;
+  programs.virt-manager.enable = true;
   programs.firefox.enable = true;
   programs.yubikey-touch-detector.enable = true;
   programs.git.enable = true;
