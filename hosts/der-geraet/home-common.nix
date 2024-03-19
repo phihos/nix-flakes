@@ -22,5 +22,8 @@
     "org/gnome/desktop/session" = {
       idle-delay = 0;
     };
+    "org/gnome/desktop/calendar" = {
+      show-weekdate = true;
+    };
   };
 }
