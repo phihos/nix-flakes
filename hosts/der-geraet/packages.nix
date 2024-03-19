@@ -30,6 +30,7 @@
     networkmanager-openvpn
     pciutils
     pdk
+    pika-backup
     ruby
     rubyPackages.ffi
     slack
