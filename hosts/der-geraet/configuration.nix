@@ -100,10 +100,20 @@
     ];
   };
 
+  users.users.philipp-privat = {
+    isNormalUser = true;
+    description = "Philipp Hossner";
+    extraGroups = ["networkmanager" "wheel" "docker"];
+    packages = with pkgs; [
+      firefox
+    ];
+  };
+
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     users = {
       "phil" = import ./home-phil.nix;
+      "philipp-privat" = import ./home-philipp-privat.nix;
     };
   };
 
