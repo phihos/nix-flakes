@@ -12,7 +12,6 @@
   environment.systemPackages = with pkgs; [
     pkgs.yubioath-flutter
     inputs.nix-software-center.packages.${system}.nix-software-center
-    (pkgs.wrapFirefox (pkgs.firefox-unwrapped.override {pipewireSupport = true;}) {})
     vim
     wget
     pciutils
@@ -53,9 +52,12 @@
       ];
     })
   ];
+
+  programs.firefox.enable = true;
+  programs.yubikey-touch-detector.enable = true;
   programs.git.enable = true;
   programs.git.lfs.enable = true;
-  programs.firefox.enable = true;
+  virtualisation.docker.enable = true;
   programs._1password.enable = true;
   programs._1password-gui = {
     enable = true;

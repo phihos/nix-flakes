@@ -142,6 +142,4 @@
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
-
-  virtualisation.docker.enable = true;
 }
