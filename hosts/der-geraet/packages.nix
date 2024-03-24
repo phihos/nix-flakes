@@ -60,6 +60,7 @@
   programs.git.lfs.enable = true;
   programs.gnupg.agent.enable = true;
   programs.gnupg.agent.enableSSHSupport = true;
+  programs.iftop.enable = true;
   programs.mtr.enable = true;
   programs.virt-manager.enable = true;
   programs.wireshark.enable = true;
