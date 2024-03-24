@@ -27,6 +27,7 @@
     kubectl
     kubetail
     libvirt
+    nethogs
     networkmanager-openvpn
     pciutils
     pdk
