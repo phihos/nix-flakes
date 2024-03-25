@@ -29,6 +29,7 @@
     libvirt
     nethogs
     networkmanager-openvpn
+    nix-output-monitor
     pciutils
     pdk
     pika-backup
