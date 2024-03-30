@@ -27,6 +27,7 @@
     krew
     kubectl
     kubernetes-helm
+    kubernetes-helmPlugins.helm-diff
     kubernetes-helmPlugins.helm-secrets
     kubetail
     libvirt
