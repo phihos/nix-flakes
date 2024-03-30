@@ -18,6 +18,7 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.utcclock
+    helmfile
     inputs.nix-software-center.packages.${system}.nix-software-center
     jetbrains.goland
     jetbrains.idea-ultimate
@@ -25,6 +26,8 @@
     jetbrains.ruby-mine
     krew
     kubectl
+    kubernetes-helm
+    kubernetes-helmPlugins.helm-secrets
     kubetail
     libvirt
     nethogs
