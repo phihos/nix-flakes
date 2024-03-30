@@ -49,5 +49,19 @@
       scroll-action = "cycle-windows";
       custom-theme-shrink = true;
     };
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+      ];
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      name = "Open Console";
+      binding = "<Control><Alt>t";
+      command = "kgx";
+    };
+  };
+
+  home.sessionVariables = {
+    EDITOR = "nano";
   };
 }
