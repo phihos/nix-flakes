@@ -63,5 +63,6 @@
 
   home.sessionVariables = {
     EDITOR = "nano";
+    QT_STYLE_OVERRIDE = "adwaita-dark";
   };
 }

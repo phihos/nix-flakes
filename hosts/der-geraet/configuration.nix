@@ -152,10 +152,4 @@
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
-
-  qt = {
-    enable = true;
-    platformTheme = "gnome";
-    style = "adwaita-dark";
-  };
 }
