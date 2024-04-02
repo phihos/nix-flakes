@@ -23,6 +23,7 @@
     gnomeExtensions.utcclock
     helmfile
     inputs.nix-software-center.packages.${system}.nix-software-center
+    jetbrains.clion
     jetbrains.goland
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
