@@ -11,6 +11,7 @@
   # Search "programs.<name>" https://search.nixos.org/options before.
   environment.systemPackages = with pkgs; [
     adwaita-qt
+    gcc
     git-crypt
     gnome.gnome-tweaks
     gnome.networkmanager-openvpn
