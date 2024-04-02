@@ -35,6 +35,7 @@
     libvirt
     nethogs
     networkmanager-openvpn
+    nix-index
     nix-output-monitor
     openssl
     pciutils
