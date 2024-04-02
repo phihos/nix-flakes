@@ -39,6 +39,7 @@
     pciutils
     pdk
     pika-backup
+    poetry
     ruby
     rubyPackages.ffi
     slack
