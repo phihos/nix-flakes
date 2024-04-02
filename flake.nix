@@ -15,6 +15,8 @@
     alejandra.inputs.nixpkgs.follows = "nixpkgs";
 
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+
+    poetry2nix.url = "github:nix-community/poetry2nix";
   };
 
   outputs = {

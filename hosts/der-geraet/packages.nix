@@ -61,6 +61,10 @@
         ms-vscode-remote.remote-ssh
       ];
     })
+
+    # dev libs
+    pkgs.openldap.dev
+    pkgs.cyrus_sasl.dev
   ];
 
   programs._1password-gui.enable = true;
