@@ -35,6 +35,7 @@
     nethogs
     networkmanager-openvpn
     nix-output-monitor
+    openssl
     pciutils
     pdk
     pika-backup
