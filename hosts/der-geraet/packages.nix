@@ -66,6 +66,7 @@
   programs._1password-gui.enable = true;
   programs._1password-gui.polkitPolicyOwners = ["phil"];
   programs._1password.enable = true;
+  programs.direnv.enable = true;
   programs.firefox.enable = true;
   programs.git.enable = true;
   programs.git.lfs.enable = true;
