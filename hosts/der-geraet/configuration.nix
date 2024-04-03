@@ -156,7 +156,7 @@
   fonts = {
     enableDefaultPackages = true;
     fontDir.enable = true;
-    fonts = with pkgs; [
+    packages = with pkgs; [
       corefonts
       vistafonts
     ];

@@ -105,5 +105,6 @@
     xorg.libXrender
     xorg.libXtst
     freetype
+    fontconfig.lib
   ];
 }
