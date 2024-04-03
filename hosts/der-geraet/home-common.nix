@@ -48,6 +48,7 @@
       show-icons-emblems = false;
       scroll-action = "cycle-windows";
       custom-theme-shrink = true;
+      apply-custom-theme = true;
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [
