@@ -104,5 +104,6 @@
     xorg.libXi
     xorg.libXrender
     xorg.libXtst
+    freetype
   ];
 }
