@@ -152,13 +152,4 @@
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
-
-  fonts = {
-    enableDefaultPackages = true;
-    fontDir.enable = true;
-    packages = with pkgs; [
-      corefonts
-      vistafonts
-    ];
-  };
 }

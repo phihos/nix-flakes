@@ -96,6 +96,8 @@
     # here, NOT in environment.systemPackages
 
     # Jetbrains remote development
+    fontconfig.lib
+    freetype
     jetbrains.jdk
     libz
     vcpkg
@@ -104,7 +106,5 @@
     xorg.libXi
     xorg.libXrender
     xorg.libXtst
-    freetype
-    fontconfig.lib
   ];
 }
