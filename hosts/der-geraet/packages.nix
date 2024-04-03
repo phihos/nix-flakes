@@ -94,9 +94,12 @@
   programs.nix-ld.libraries = with pkgs; [
     # Add any missing dynamic libraries for unpackaged programs
     # here, NOT in environment.systemPackages
+
+    # Jetbrains remote development
     libz
     vcpkg
     xorg.libXext
     xorg.libX11
+    xorg.libXrender
   ];
 }
