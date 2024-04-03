@@ -96,5 +96,6 @@
     # here, NOT in environment.systemPackages
     libz
     vcpkg
+    xorg.libXext
   ];
 }
