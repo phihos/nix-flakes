@@ -101,5 +101,6 @@
     xorg.libXext
     xorg.libX11
     xorg.libXrender
+    jetbrains.jdk
   ];
 }
