@@ -10,6 +10,7 @@
   # $ nix search wget
   # Search "programs.<name>" https://search.nixos.org/options before.
   environment.systemPackages = with pkgs; [
+    adoptopenjdk-icedtea-web
     adwaita-qt
     docker-compose
     gcc
