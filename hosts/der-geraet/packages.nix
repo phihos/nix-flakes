@@ -96,12 +96,13 @@
     # here, NOT in environment.systemPackages
 
     # Jetbrains remote development
+    jetbrains.jdk
     libz
     vcpkg
-    xorg.libXext
-    xorg.libXtst
     xorg.libX11
+    xorg.libXext
+    xorg.libXi
     xorg.libXrender
-    jetbrains.jdk
+    xorg.libXtst
   ];
 }
