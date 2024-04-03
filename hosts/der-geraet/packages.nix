@@ -99,6 +99,7 @@
     libz
     vcpkg
     xorg.libXext
+    xorg.libXtst
     xorg.libX11
     xorg.libXrender
     jetbrains.jdk
