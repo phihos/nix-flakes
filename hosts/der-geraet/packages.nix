@@ -97,5 +97,6 @@
     libz
     vcpkg
     xorg.libXext
+    xorg.libX11
   ];
 }
