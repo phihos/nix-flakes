@@ -32,6 +32,7 @@
     krew
     kubectl
     kubectx
+    kubelogin-oidc
     kubernetes-helm
     kubernetes-helmPlugins.helm-diff
     kubernetes-helmPlugins.helm-secrets
