@@ -87,6 +87,8 @@
     #media-session.enable = true;
   };
 
+  services.power-profiles-daemon.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
