@@ -8,3 +8,4 @@ sudo nixos-rebuild switch --flake .
 gen=$(nixos-rebuild list-generations | grep current)
 git commit -am "$gen"
 popd
+SCRIPT_DIR/cleanup.sh
