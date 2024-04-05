@@ -31,6 +31,7 @@
     jetbrains.ruby-mine
     krew
     kubectl
+    kubectx
     kubernetes-helm
     kubernetes-helmPlugins.helm-diff
     kubernetes-helmPlugins.helm-secrets
