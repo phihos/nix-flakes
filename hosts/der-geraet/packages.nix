@@ -22,6 +22,7 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.utcclock
+    gnumake
     helmfile
     inputs.nix-software-center.packages.${system}.nix-software-center
     jetbrains.clion
