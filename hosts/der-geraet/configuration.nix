@@ -96,7 +96,7 @@
   users.users.phil = {
     isNormalUser = true;
     description = "Philipp Hossner";
-    extraGroups = ["networkmanager" "wheel" "docker"];
+    extraGroups = ["networkmanager" "wheel" "docker" "qemu-libvirtd" "libvirtd"];
     packages = with pkgs; [
       firefox
     ];
@@ -105,7 +105,7 @@
   users.users.philipp-privat = {
     isNormalUser = true;
     description = "Philipp Hossner";
-    extraGroups = ["networkmanager" "wheel" "docker"];
+    extraGroups = ["networkmanager" "wheel" "docker" "qemu-libvirtd" "libvirtd"];
     packages = with pkgs; [
       firefox
     ];

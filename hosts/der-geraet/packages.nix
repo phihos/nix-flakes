@@ -92,6 +92,7 @@
   programs.wireshark.enable = true;
   programs.yubikey-touch-detector.enable = true;
   virtualisation.docker.enable = true;
+  virtualisation.libvirtd.enable = true;
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
