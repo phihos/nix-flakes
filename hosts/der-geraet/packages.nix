@@ -111,5 +111,8 @@
     xorg.libXi
     xorg.libXrender
     xorg.libXtst
+
+    # Ruby bundler
+    libffi
   ];
 }
