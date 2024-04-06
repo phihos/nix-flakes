@@ -95,11 +95,13 @@
   };
 
   home.sessionVariables = {
+    FOO = "BAR";
     EDITOR = "nano";
     SSH_AUTH_SOCK = "${config.home.homeDirectory}/.1password/agent.sock";
   };
 
   systemd.user.sessionVariables = {
+    FOO = "BAZ";
     EDITOR = "nano";
     SSH_AUTH_SOCK = "${config.home.homeDirectory}/.1password/agent.sock";
   };
