@@ -43,6 +43,11 @@
     "git.autoStash" = true;
   };
 
+  services.gpg-agent = {
+    enable = true;
+    enableSshSupport = false;
+  };
+
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
