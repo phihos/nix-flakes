@@ -84,7 +84,7 @@
   programs.git.enable = true;
   programs.git.lfs.enable = true;
   programs.gnupg.agent.enable = true;
-  programs.gnupg.agent.enableSSHSupport = true;
+  programs.gnupg.agent.enableSSHSupport = false;
   programs.iftop.enable = true;
   programs.mtr.enable = true;
   programs.steam = {
