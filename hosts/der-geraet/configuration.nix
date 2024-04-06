@@ -5,6 +5,7 @@
   config,
   pkgs,
   inputs,
+  lib,
   ...
 }: {
   imports = [
@@ -124,6 +125,9 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
   services.pcscd.enable = true;
+
+  # disable gnome keyring
+  services.gnome.gnome-keyring.enable = lib.mkForce false;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

@@ -6,4 +6,3 @@ pushd "${SCRIPT_DIR}/.."
 sudo nixos-rebuild switch --flake . --upgrade --update-input nixpkgs
 git commit -am "system-upgrade"
 popd
-"$SCRIPT_DIR/cleanup.sh"
