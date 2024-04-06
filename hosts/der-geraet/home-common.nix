@@ -33,6 +33,16 @@
     };
   };
 
+  programs.vscode.userSettings = {
+    "explorer.confirmDelete" = false;
+    "files.autoSave" = "afterDelay";
+    "git.confirmSync" = false;
+    "git.autofetch" = true;
+    "git.enableSmartCommit" = true;
+    "security.workspace.trust.untrustedFiles" = "open";
+    "git.autoStash" = true;
+  };
+
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
