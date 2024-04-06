@@ -65,6 +65,6 @@
   #  /etc/profiles/per-user/phil/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    SSH_AUTH_SOCK = "/home/phil/.1password/agent.sock";
   };
 }
