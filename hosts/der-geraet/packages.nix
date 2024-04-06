@@ -81,8 +81,12 @@
   programs._1password.enable = true;
   programs.direnv.enable = true;
   programs.firefox.enable = true;
-  programs.git.enable = true;
-  programs.git.lfs.enable = true;
+  programs.git = {
+    enable = true;
+    lfs.enable = true;
+    package = pkgs.gitFull;
+    config.credential.helper = "libsecret";
+  };
   programs.gnupg.agent.enable = true;
   programs.gnupg.agent.enableSSHSupport = true;
   programs.iftop.enable = true;
