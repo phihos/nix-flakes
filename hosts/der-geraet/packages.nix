@@ -65,7 +65,9 @@
         kamadorueda.alejandra
         ms-azuretools.vscode-docker
         ms-python.python
+        ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
+        # puppet.puppet-vscode
       ];
     })
 
