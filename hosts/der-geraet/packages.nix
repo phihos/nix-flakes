@@ -12,6 +12,7 @@
   environment.systemPackages = with pkgs; [
     adoptopenjdk-icedtea-web
     adwaita-qt
+    dig
     docker-compose
     gcc
     git-crypt
