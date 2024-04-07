@@ -43,6 +43,7 @@
     "git.autoStash" = true;
   };
 
+  services.gnome-keyring.components = ["pkcs11" "secrets"];
   services.gpg-agent = {
     enable = true;
     enableSshSupport = false;
