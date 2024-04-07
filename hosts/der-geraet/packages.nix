@@ -87,6 +87,7 @@
         ms-python.python
         ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
+        # val.vscode-continue-inline-comments
         # puppet.puppet-vscode
       ];
     })
