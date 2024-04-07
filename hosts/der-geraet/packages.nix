@@ -51,6 +51,7 @@
     pdk
     pika-backup
     poetry
+    pstree
     ruby
     rubyPackages.ffi
     slack
