@@ -32,6 +32,7 @@
       }/bin/git-credential-libsecret";
     };
   };
+  # add .gitconfig since some tools like devcontainer rely on that file
   home.file = {
     ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/git/config";
   };
