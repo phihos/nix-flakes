@@ -133,7 +133,7 @@
   services.pcscd.enable = true;
 
   # disable gnome keyring
-  services.gnome.gnome-keyring.enable = lib.mkForce false;
+  # services.gnome.gnome-keyring.enable = lib.mkForce false;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
