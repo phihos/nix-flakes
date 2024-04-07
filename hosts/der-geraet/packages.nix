@@ -6,6 +6,21 @@
 }: {
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.overlays = [
+    (final: prev: {
+      gnome = prev.gnome.overrideScope' (gfinal: gprev: {
+        gnome-keyring = gprev.gnome-keyring.overrideAttrs (oldAttrs: {
+          configureFlags =
+            oldAttrs.configureFlags
+            or []
+            ++ [
+              "--disable-ssh-agent"
+            ];
+        });
+      });
+    })
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # Search "programs.<name>" https://search.nixos.org/options before.
