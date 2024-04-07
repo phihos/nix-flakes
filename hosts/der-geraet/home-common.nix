@@ -45,6 +45,7 @@
     "git.fetchOnPull" = true;
     "git.mergeEditor" = true;
     "git.pullBeforeCheckout" = true;
+    "editor.formatOnSave" = true;
   };
 
   services.gnome-keyring.components = ["pkcs11" "secrets"];
