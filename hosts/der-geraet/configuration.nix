@@ -141,6 +141,7 @@
   # Or disable the firewall altogether.
   networking.firewall.enable = true;
   networking.firewall.trustedInterfaces = ["docker0"];
+  networking.firewall.allowedTCPPorts = [80 389 636];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
