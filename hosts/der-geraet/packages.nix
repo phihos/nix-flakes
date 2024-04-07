@@ -41,6 +41,7 @@
     kubernetes-helmPlugins.helm-secrets
     kubetail
     libvirt
+    lsof
     nethogs
     networkmanager-openvpn
     nix-index
