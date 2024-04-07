@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
     adoptopenjdk-icedtea-web
     adwaita-qt
+    black
     dig
     distrobox
     docker-compose
