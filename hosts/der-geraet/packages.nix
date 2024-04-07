@@ -28,6 +28,7 @@
     adoptopenjdk-icedtea-web
     adwaita-qt
     dig
+    distrobox
     docker-compose
     gcc
     git-crypt
