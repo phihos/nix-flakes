@@ -32,6 +32,9 @@
       }/bin/git-credential-libsecret";
     };
   };
+  home.file = {
+    ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/git/config";
+  };
 
   programs.vscode.userSettings = {
     "explorer.confirmDelete" = false;
