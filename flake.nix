@@ -11,9 +11,6 @@
 
     nix-software-center.url = "github:snowfallorg/nix-software-center";
 
-    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
-    alejandra.inputs.nixpkgs.follows = "nixpkgs";
-
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     poetry2nix.url = "github:nix-community/poetry2nix";

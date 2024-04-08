@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
     adoptopenjdk-icedtea-web
     adwaita-qt
+    alejandra
     black
     dig
     distrobox
@@ -79,7 +80,6 @@
     wget
     yubioath-flutter
     zoom-us
-    inputs.alejandra.defaultPackage.${system}
     (vscode-with-extensions.override {
       vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
         bbenoist.nix
