@@ -81,17 +81,17 @@
     zoom-us
     inputs.alejandra.defaultPackage.${system}
     (vscode-with-extensions.override {
-      vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace-release; [
+      vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
         bbenoist.nix
+        eamodio.gitlens
+        k--kato.intellij-idea-keybindings
         kamadorueda.alejandra
         ms-azuretools.vscode-docker
         ms-python.python
         ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
-        eamodio.gitlens
-        k--kato.intellij-idea-keybindings
-        val.vscode-continue-inline-comments
         puppet.puppet-vscode
+        val.vscode-continue-inline-comments
       ];
     })
 
