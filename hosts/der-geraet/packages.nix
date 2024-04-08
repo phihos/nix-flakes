@@ -72,6 +72,7 @@
     ruby
     rubyPackages.ffi
     slack
+    usbutils
     vagrant
     vim
     virt-manager
@@ -87,6 +88,7 @@
         ms-python.python
         ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
+        eamodio.gitlens
         # val.vscode-continue-inline-comments
         # puppet.puppet-vscode
       ];
