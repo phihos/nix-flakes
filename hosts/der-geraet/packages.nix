@@ -94,10 +94,6 @@
         val.vscode-continue-inline-comments
       ];
     })
-
-    # dev libs
-    pkgs.openldap.dev
-    pkgs.cyrus_sasl.dev
   ];
 
   programs._1password-gui.enable = true;
@@ -141,5 +137,9 @@
 
     # Ruby bundler
     libffi
+
+    # ldap libs
+    pkgs.openldap.dev
+    pkgs.cyrus_sasl.dev
   ];
 }
