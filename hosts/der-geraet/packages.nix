@@ -89,6 +89,8 @@
         ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
         eamodio.gitlens
+        inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace.k--kato.intellij-idea-keybindings
+        # k--kato.intellij-idea-keybindings
         # val.vscode-continue-inline-comments
         # puppet.puppet-vscode
       ];
