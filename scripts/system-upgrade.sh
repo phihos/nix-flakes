@@ -3,6 +3,7 @@ set -e
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 pushd "${SCRIPT_DIR}/.."
-sudo nixos-rebuild switch --flake . --upgrade --upgrade-all
+nix flake update
+sudo nixos-rebuild switch --flake . --upgrade --commit-lock-file
 git commit -am "system-upgrade"
 popd
