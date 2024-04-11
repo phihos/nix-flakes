@@ -130,7 +130,6 @@
         "rust"
         "docker"
         "kubectx"
-        "elixir"
         "poetry"
       ];
     };
