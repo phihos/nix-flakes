@@ -32,6 +32,7 @@
     dig
     distrobox
     docker-compose
+    fzf
     gcc
     git-crypt
     gnome.gnome-tweaks
