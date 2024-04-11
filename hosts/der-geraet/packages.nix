@@ -115,6 +115,26 @@
   programs.virt-manager.enable = true;
   programs.wireshark.enable = true;
   programs.yubikey-touch-detector.enable = true;
+  programs.zsh = {
+    enable = true;
+    autosuggestions.enable = true;
+    zsh-autoenv.enable = true;
+    syntaxHighlighting.enable = true;
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [
+        "git"
+        "npm"
+        "history"
+        "rust"
+        "docker"
+        "kubectx"
+        "elixir"
+        "poetry"
+      ];
+    };
+  };
   virtualisation.docker.enable = true;
   virtualisation.libvirtd.enable = true;
 
