@@ -47,6 +47,7 @@
     inetutils
     inputs.nix-software-center.packages.${system}.nix-software-center
     jetbrains.clion
+    jetbrains.datagrip
     jetbrains.goland
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
