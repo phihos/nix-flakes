@@ -62,6 +62,7 @@
     kubetail
     libvirt
     lsof
+    meld
     nethogs
     networkmanager-openvpn
     nix-index
