@@ -44,6 +44,7 @@
     gnomeExtensions.utcclock
     gnumake
     helmfile
+    htop
     inetutils
     inputs.nix-software-center.packages.${system}.nix-software-center
     jetbrains.clion
