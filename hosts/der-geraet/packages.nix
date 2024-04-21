@@ -28,6 +28,7 @@
     adoptopenjdk-icedtea-web
     adwaita-qt
     alejandra
+    config.boot.kernelPackages.perf
     black
     dig
     distrobox
