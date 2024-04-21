@@ -139,6 +139,7 @@
     };
   };
   virtualisation.docker.enable = true;
+  virtualisation.docker.package = pkgs.docker_26;
   virtualisation.libvirtd.enable = true;
 
   programs.nix-ld.enable = true;
