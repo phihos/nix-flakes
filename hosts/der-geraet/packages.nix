@@ -80,6 +80,7 @@
     slack
     usbutils
     vagrant
+    vault
     vim
     virt-manager
     wget
