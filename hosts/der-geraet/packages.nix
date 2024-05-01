@@ -69,6 +69,7 @@
     networkmanager-openvpn
     nix-index
     nix-output-monitor
+    nodejs
     openssl
     pciutils
     pdk
