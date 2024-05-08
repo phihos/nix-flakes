@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -19,6 +20,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixos-hardware,
     ...
   } @ inputs: {
     nixosConfigurations.der-geraet = nixpkgs.lib.nixosSystem {
@@ -28,6 +30,7 @@
       modules = [
         ./hosts/der-geraet/configuration.nix
         inputs.home-manager.nixosModules.default
+        #nixos-hardware.nixosModules.framework-13th-gen-intel
       ];
     };
   };
