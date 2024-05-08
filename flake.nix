@@ -30,7 +30,7 @@
       modules = [
         ./hosts/der-geraet/configuration.nix
         inputs.home-manager.nixosModules.default
-        #nixos-hardware.nixosModules.framework-13th-gen-intel
+        nixos-hardware.nixosModules.framework-13th-gen-intel
       ];
     };
   };
