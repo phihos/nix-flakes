@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./home-common.nix
+    ./home-philipp-privat-secret.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
