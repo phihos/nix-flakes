@@ -53,6 +53,7 @@
     jetbrains.datagrip
     jetbrains.goland
     jetbrains.idea-ultimate
+    jetbrains.phpstorm
     jetbrains.pycharm-professional
     jetbrains.ruby-mine
     krew
