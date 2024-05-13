@@ -44,6 +44,7 @@
     gnomeExtensions.dash-to-dock
     gnomeExtensions.utcclock
     gnumake
+    grpcurl
     helmfile
     htop
     inetutils
