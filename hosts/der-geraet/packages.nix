@@ -77,6 +77,7 @@
     pdk
     pika-backup
     poetry
+    postgresql
     pstree
     ruby
     rubyPackages.ffi
