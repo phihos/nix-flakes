@@ -67,6 +67,7 @@
     libvirt
     lsof
     meld
+    mitmproxy
     nethogs
     networkmanager-openvpn
     nix-index
