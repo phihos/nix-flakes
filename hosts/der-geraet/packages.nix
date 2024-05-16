@@ -172,5 +172,8 @@
     # ldap libs
     pkgs.openldap.dev
     pkgs.cyrus_sasl.dev
+
+    # grpc
+    libgcc.lib
   ];
 }
