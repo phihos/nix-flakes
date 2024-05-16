@@ -174,6 +174,6 @@
     pkgs.cyrus_sasl.dev
 
     # grpc
-    libgcc.lib
+    libgcc
   ];
 }
