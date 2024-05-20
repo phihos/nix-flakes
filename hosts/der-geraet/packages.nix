@@ -4,6 +4,10 @@
   inputs,
   ...
 }: {
+  imports = [
+    ./packages-kubernetes-helm.nix
+  ];
+
   nixpkgs.config.allowUnfree = true;
 
   nixpkgs.overlays = [
@@ -61,16 +65,6 @@
     kubectl
     kubectx
     kubelogin-oidc
-    (
-      wrapHelm kubernetes-helm
-      {
-        plugins = with pkgs.kubernetes-helmPlugins; [
-          helm-diff
-          helm-secrets
-        ];
-      }
-    )
-    helmfile-wrapped
     kubetail
     libvirt
     lsof
