@@ -61,9 +61,16 @@
     kubectl
     kubectx
     kubelogin-oidc
-    kubernetes-helm
-    kubernetes-helmPlugins.helm-diff
-    kubernetes-helmPlugins.helm-secrets
+    (
+      wrapHelm kubernetes-helm
+      {
+        plugins = with pkgs.kubernetes-helmPlugins; [
+          helm-diff
+          helm-secrets
+        ];
+      }
+    )
+    helmfile-wrapped
     kubetail
     libvirt
     lsof
