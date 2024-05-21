@@ -106,6 +106,7 @@
         puppet.puppet-vscode
         val.vscode-continue-inline-comments
         redhat.vscode-yaml
+        yzhang.markdown-all-in-one
       ];
     })
   ];
