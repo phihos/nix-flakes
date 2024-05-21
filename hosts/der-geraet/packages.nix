@@ -105,6 +105,7 @@
         ms-vscode-remote.remote-ssh
         puppet.puppet-vscode
         val.vscode-continue-inline-comments
+        redhat.vscode-yaml
       ];
     })
   ];
