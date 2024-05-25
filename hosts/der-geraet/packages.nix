@@ -98,6 +98,7 @@
       vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
         bbenoist.nix
         eamodio.gitlens
+        james-yu.latex-workshop
         k--kato.intellij-idea-keybindings
         kamadorueda.alejandra
         ms-azuretools.vscode-docker
