@@ -85,6 +85,7 @@
     ruby
     rubyPackages.ffi
     slack
+    texlive.combined.scheme-full
     usbutils
     vagrant
     vault
