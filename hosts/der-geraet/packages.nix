@@ -6,6 +6,7 @@
 }: {
   imports = [
     ./packages-kubernetes-helm.nix
+    ./packages-latex.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -86,7 +87,6 @@
     ruby
     rubyPackages.ffi
     slack
-    texlive.combined.scheme-full
     usbutils
     vagrant
     vault
