@@ -108,6 +108,7 @@
         puppet.puppet-vscode
         val.vscode-continue-inline-comments
         redhat.vscode-yaml
+        vscode-icons-team.vscode-icons
         yzhang.markdown-all-in-one
       ];
     })
