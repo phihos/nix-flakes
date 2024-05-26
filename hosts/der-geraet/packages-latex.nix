@@ -1,3 +1,5 @@
+# not included
+# using devcontainers now since minted with autogobble needs python3 binary
 {
   config,
   pkgs,

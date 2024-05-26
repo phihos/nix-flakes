@@ -6,7 +6,6 @@
 }: {
   imports = [
     ./packages-kubernetes-helm.nix
-    ./packages-latex.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
