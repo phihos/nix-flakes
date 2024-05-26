@@ -82,7 +82,6 @@
     poetry
     postgresql
     pstree
-    python312Packages.pygments
     ruby
     rubyPackages.ffi
     slack
