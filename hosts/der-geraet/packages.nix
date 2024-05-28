@@ -34,6 +34,7 @@
     alejandra
     config.boot.kernelPackages.perf
     black
+    curlHTTP3
     dig
     distrobox
     docker-compose
