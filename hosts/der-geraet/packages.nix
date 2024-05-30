@@ -25,6 +25,8 @@
     })
   ];
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # Search "programs.<name>" https://search.nixos.org/options before.
