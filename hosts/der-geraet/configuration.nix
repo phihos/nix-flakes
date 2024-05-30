@@ -34,6 +34,10 @@
   services.resolved = {
     enable = true;
     fallbackDns = ["1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one"];
+    # make resolved available to docker
+    extraConfig = ''
+      DNSStubListenerExtra=172.17.0.1
+    '';
   };
 
   # Set your time zone.
