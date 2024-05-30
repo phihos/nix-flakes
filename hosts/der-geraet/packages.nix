@@ -156,6 +156,12 @@
   };
   virtualisation.docker.enable = true;
   virtualisation.docker.package = pkgs.docker_26;
+  virtualisation.docker.daemon.settings = {
+    # use systemd-
+    dns = [
+      "172.17.0.1"
+    ];
+  };
   virtualisation.libvirtd.enable = true;
 
   programs.nix-ld.enable = true;
