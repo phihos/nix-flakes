@@ -1,4 +1,5 @@
 {
+  inputs,
   config,
   pkgs,
   lib,
@@ -38,6 +39,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+
   programs.vscode = {
     enable = true;
     userSettings = {
@@ -54,20 +56,25 @@
       "git.pullBeforeCheckout" = true;
       "editor.formatOnSave" = true;
     };
-    extensions = with pkgs.vscode-extensions; [
-      bbenoist.nix
-      eamodio.gitlens
-      james-yu.latex-workshop
-      k--kato.intellij-idea-keybindings
-      kamadorueda.alejandra
-      mkhl.direnv
-      ms-azuretools.vscode-docker
-      ms-python.python
-      ms-vscode-remote.remote-containers
-      ms-vscode-remote.remote-ssh
-      #puppet.puppet-vscode
-      redhat.vscode-yaml
-    ];
+    extensions = let
+      vscode_ext_pks = with pkgs.vscode-extensions; [
+        bbenoist.nix
+        eamodio.gitlens
+        james-yu.latex-workshop
+        k--kato.intellij-idea-keybindings
+        kamadorueda.alejandra
+        mkhl.direnv
+        ms-azuretools.vscode-docker
+        ms-python.python
+        ms-vscode-remote.remote-containers
+        ms-vscode-remote.remote-ssh
+        redhat.vscode-yaml
+      ];
+      vscode_ext_marketplace_pkgs = with inputs.nix-vscode-extensions.extensions.x86_64-linux.vscode-marketplace; [
+        puppet.puppet-vscode
+      ];
+    in
+      vscode_ext_pks ++ vscode_ext_marketplace_pkgs;
   };
 
   services.gnome-keyring.components = ["pkcs11" "secrets"];
