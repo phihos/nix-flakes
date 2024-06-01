@@ -37,19 +37,26 @@
     ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/git/config";
   };
 
-  programs.vscode.userSettings = {
-    "explorer.confirmDelete" = false;
-    "files.autoSave" = "afterDelay";
-    "git.confirmSync" = false;
-    "git.autofetch" = true;
-    "git.enableSmartCommit" = true;
-    "security.workspace.trust.untrustedFiles" = "open";
-    "git.autoStash" = true;
-    "git.allowForcePush" = true;
-    "git.fetchOnPull" = true;
-    "git.mergeEditor" = true;
-    "git.pullBeforeCheckout" = true;
-    "editor.formatOnSave" = true;
+  nixpkgs.config.allowUnfree = true;
+  programs.vscode = {
+    enable = true;
+    userSettings = {
+      "explorer.confirmDelete" = false;
+      "files.autoSave" = "afterDelay";
+      "git.confirmSync" = false;
+      "git.autofetch" = true;
+      "git.enableSmartCommit" = true;
+      "security.workspace.trust.untrustedFiles" = "open";
+      "git.autoStash" = true;
+      "git.allowForcePush" = true;
+      "git.fetchOnPull" = true;
+      "git.mergeEditor" = true;
+      "git.pullBeforeCheckout" = true;
+      "editor.formatOnSave" = true;
+    };
+    extensions = with pkgs; [
+      vscode-extensions.bbenoist.nix
+    ];
   };
 
   services.gnome-keyring.components = ["pkcs11" "secrets"];

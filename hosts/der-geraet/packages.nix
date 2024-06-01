@@ -96,25 +96,25 @@
     wget
     yubioath-flutter
     zoom-us
-    (vscode-with-extensions.override {
-      vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
-        bbenoist.nix
-        eamodio.gitlens
-        james-yu.latex-workshop
-        k--kato.intellij-idea-keybindings
-        kamadorueda.alejandra
-        mkhl.direnv
-        ms-azuretools.vscode-docker
-        ms-python.python
-        ms-vscode-remote.remote-containers
-        ms-vscode-remote.remote-ssh
-        puppet.puppet-vscode
-        redhat.vscode-yaml
-        val.vscode-continue-inline-comments
-        vscode-icons-team.vscode-icons
-        yzhang.markdown-all-in-one
-      ];
-    })
+    # (vscode-with-extensions.override {
+    #   vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
+    #     bbenoist.nix
+    #     eamodio.gitlens
+    #     james-yu.latex-workshop
+    #     k--kato.intellij-idea-keybindings
+    #     kamadorueda.alejandra
+    #     mkhl.direnv
+    #     ms-azuretools.vscode-docker
+    #     ms-python.python
+    #     ms-vscode-remote.remote-containers
+    #     ms-vscode-remote.remote-ssh
+    #     puppet.puppet-vscode
+    #     redhat.vscode-yaml
+    #     val.vscode-continue-inline-comments
+    #     vscode-icons-team.vscode-icons
+    #     yzhang.markdown-all-in-one
+    #   ];
+    # })
   ];
 
   programs._1password-gui.enable = true;
