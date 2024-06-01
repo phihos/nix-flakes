@@ -69,9 +69,12 @@
         ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
         redhat.vscode-yaml
+        vscode-icons-team.vscode-icons
+        yzhang.markdown-all-in-one
       ];
       vscode_ext_marketplace_pkgs = with inputs.nix-vscode-extensions.extensions.x86_64-linux.vscode-marketplace; [
         puppet.puppet-vscode
+        val.vscode-continue-inline-comments
       ];
     in
       vscode_ext_pks ++ vscode_ext_marketplace_pkgs;
