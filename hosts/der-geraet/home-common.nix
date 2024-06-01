@@ -57,6 +57,8 @@
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
       eamodio.gitlens
+      james-yu.latex-workshop
+      k--kato.intellij-idea-keybindings
     ];
   };
 
