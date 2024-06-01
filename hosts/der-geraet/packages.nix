@@ -103,13 +103,14 @@
         james-yu.latex-workshop
         k--kato.intellij-idea-keybindings
         kamadorueda.alejandra
+        mkhl.direnv
         ms-azuretools.vscode-docker
         ms-python.python
         ms-vscode-remote.remote-containers
         ms-vscode-remote.remote-ssh
         puppet.puppet-vscode
-        val.vscode-continue-inline-comments
         redhat.vscode-yaml
+        val.vscode-continue-inline-comments
         vscode-icons-team.vscode-icons
         yzhang.markdown-all-in-one
       ];
@@ -157,7 +158,7 @@
   virtualisation.docker.enable = true;
   virtualisation.docker.package = pkgs.docker_26;
   virtualisation.docker.daemon.settings = {
-    # use systemd-
+    # use systemd-resolved DNS server
     dns = [
       "172.17.0.1"
     ];
