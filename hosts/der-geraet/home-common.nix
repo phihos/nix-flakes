@@ -59,6 +59,14 @@
       eamodio.gitlens
       james-yu.latex-workshop
       k--kato.intellij-idea-keybindings
+      kamadorueda.alejandra
+      mkhl.direnv
+      ms-azuretools.vscode-docker
+      ms-python.python
+      ms-vscode-remote.remote-containers
+      ms-vscode-remote.remote-ssh
+      #puppet.puppet-vscode
+      redhat.vscode-yaml
     ];
   };
 
