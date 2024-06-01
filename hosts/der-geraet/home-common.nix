@@ -54,8 +54,8 @@
       "git.pullBeforeCheckout" = true;
       "editor.formatOnSave" = true;
     };
-    extensions = with pkgs; [
-      vscode-extensions.bbenoist.nix
+    extensions = with pkgs.vscode-extensions; [
+      bbenoist.nix
     ];
   };
 
