@@ -88,6 +88,7 @@
     ruby
     rubyPackages.ffi
     slack
+    sshfs
     usbutils
     vagrant
     vault
