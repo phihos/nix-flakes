@@ -55,6 +55,7 @@
       "git.mergeEditor" = true;
       "git.pullBeforeCheckout" = true;
       "editor.formatOnSave" = true;
+      "vsicons.dontShowNewVersionMessage" = true;
     };
     extensions = let
       vscode_ext_pks = with pkgs.vscode-extensions; [
