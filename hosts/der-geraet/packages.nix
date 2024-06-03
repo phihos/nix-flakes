@@ -123,6 +123,8 @@
   programs._1password.enable = true;
   programs.direnv.enable = true;
   programs.firefox.enable = true;
+  # required for sshfs
+  programs.fuse.userAllowOther = true;
   programs.git.enable = true;
   programs.git.lfs.enable = true;
   programs.gnupg.agent.enable = true;
