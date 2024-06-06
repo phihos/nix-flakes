@@ -56,6 +56,7 @@
       "git.pullBeforeCheckout" = true;
       "editor.formatOnSave" = true;
       "vsicons.dontShowNewVersionMessage" = true;
+      "terminal.integrated.scrollback" = 1000;
     };
     extensions = let
       vscode_ext_pks = with pkgs.vscode-extensions; [
