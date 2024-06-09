@@ -138,6 +138,7 @@
   };
   programs.virt-manager.enable = true;
   programs.wireshark.enable = true;
+  programs.wireshark.package = pkgs.wireshark;
   programs.yubikey-touch-detector.enable = true;
   programs.zsh = {
     enable = true;
