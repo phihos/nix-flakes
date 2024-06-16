@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs-23-11.url = "github:nixos/nixpkgs/nixos-23.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
@@ -22,6 +23,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-23-11,
     nixos-hardware,
     nur,
     ...
@@ -29,6 +31,10 @@
     nixosConfigurations.der-geraet = nixpkgs.lib.nixosSystem {
       specialArgs = {
         inherit inputs;
+        pkgs-23-11 = import nixpkgs-23-11 {
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
       };
       modules = [
         ./hosts/der-geraet/configuration.nix
