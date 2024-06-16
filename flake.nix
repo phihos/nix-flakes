@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     nixpkgs-23-11.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs-23-05.url = "github:nixos/nixpkgs/nixos-23.05";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
@@ -24,6 +25,7 @@
     self,
     nixpkgs,
     nixpkgs-23-11,
+    nixpkgs-23-05,
     nixos-hardware,
     nur,
     ...
@@ -32,6 +34,10 @@
       specialArgs = {
         inherit inputs;
         pkgs-23-11 = import nixpkgs-23-11 {
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+        pkgs-23-05 = import nixpkgs-23-05 {
           system = "x86_64-linux";
           config.allowUnfree = true;
         };

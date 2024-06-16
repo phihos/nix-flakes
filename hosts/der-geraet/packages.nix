@@ -2,6 +2,7 @@
   config,
   pkgs,
   pkgs-23-11,
+  pkgs-23-05,
   nur,
   inputs,
   ...
@@ -135,7 +136,7 @@
   programs.iftop.enable = true;
   programs.mtr.enable = true;
   programs.openvpn3.enable = true;
-  programs.openvpn3.package = pkgs-23-11.openvpn3;
+  programs.openvpn3.package = pkgs-23-05.openvpn3;
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
