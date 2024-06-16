@@ -15,12 +15,15 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     poetry2nix.url = "github:nix-community/poetry2nix";
+
+    nur.url = github:nix-community/NUR;
   };
 
   outputs = {
     self,
     nixpkgs,
     nixos-hardware,
+    nur,
     ...
   } @ inputs: {
     nixosConfigurations.der-geraet = nixpkgs.lib.nixosSystem {
@@ -31,6 +34,7 @@
         ./hosts/der-geraet/configuration.nix
         inputs.home-manager.nixosModules.default
         nixos-hardware.nixosModules.framework-13th-gen-intel
+        nur.nixosModules.nur
       ];
     };
   };

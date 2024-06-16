@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  nur,
   inputs,
   ...
 }: {
@@ -77,6 +78,7 @@
     networkmanager-openvpn
     nix-index
     nix-output-monitor
+    config.nur.repos.mloeper.openvpn3-indicator
     nodejs
     openssl
     pciutils
