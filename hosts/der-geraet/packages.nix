@@ -131,6 +131,7 @@
   programs.gnupg.agent.enableSSHSupport = false;
   programs.iftop.enable = true;
   programs.mtr.enable = true;
+  programs.openvpn3.enable = true;
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
