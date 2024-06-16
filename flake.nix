@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     nixpkgs-23-11.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-23-05.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixpkgs-22-11.url = "github:nixos/nixpkgs/nixos-22.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
@@ -26,6 +27,7 @@
     nixpkgs,
     nixpkgs-23-11,
     nixpkgs-23-05,
+    nixpkgs-22-11,
     nixos-hardware,
     nur,
     ...
@@ -38,6 +40,10 @@
           config.allowUnfree = true;
         };
         pkgs-23-05 = import nixpkgs-23-05 {
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+        pkgs-22-11 = import nixpkgs-22-11 {
           system = "x86_64-linux";
           config.allowUnfree = true;
         };
