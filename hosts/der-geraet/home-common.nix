@@ -57,6 +57,7 @@
       "editor.formatOnSave" = true;
       "vsicons.dontShowNewVersionMessage" = true;
       "terminal.integrated.scrollback" = 1000;
+      "workbench.iconTheme" = "vscode-icons";
     };
     extensions = let
       vscode_ext_pks = with pkgs.vscode-extensions; [
