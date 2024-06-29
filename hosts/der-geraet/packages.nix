@@ -31,6 +31,10 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.1.1w"
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # Search "programs.<name>" https://search.nixos.org/options before.
@@ -94,6 +98,8 @@
     rubyPackages.ffi
     slack
     sshfs
+    sublime4
+    sublime-merge
     usbutils
     vagrant
     vault
