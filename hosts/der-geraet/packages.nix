@@ -79,6 +79,7 @@
     kubetail
     libvirt
     lsof
+    massif-visualizer
     meld
     mitmproxy
     nethogs
