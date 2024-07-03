@@ -84,6 +84,11 @@
   sound.enable = true;
   hardware.pulseaudio.enable = false;
 
+  # Scanning
+  hardware.sane.extraBackends = [pkgs.sane-airscan];
+  hardware.sane.disabledDefaultBackends = ["escl"];
+  services.ipp-usb.enable = true;
+
   security.rtkit.enable = true;
 
   services.pipewire = {
