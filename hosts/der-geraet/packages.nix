@@ -107,6 +107,7 @@
     vim
     virt-manager
     wget
+    wrk
     yubioath-flutter
     zoom-us
     # (vscode-with-extensions.override {
