@@ -17,6 +17,11 @@
     poetry2nix.url = "github:nix-community/poetry2nix";
 
     nur.url = github:nix-community/NUR;
+
+    fw-fanctrl = {
+      url = "github:TamtamHero/fw-fanctrl/packaging/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -24,6 +29,7 @@
     nixpkgs,
     nixos-hardware,
     nur,
+    fw-fanctrl,
     ...
   } @ inputs: {
     nixosConfigurations.der-geraet = nixpkgs.lib.nixosSystem {
@@ -35,6 +41,7 @@
         inputs.home-manager.nixosModules.default
         nixos-hardware.nixosModules.framework-13th-gen-intel
         nur.nixosModules.nur
+        fw-fanctrl.nixosModules.default
       ];
     };
   };
