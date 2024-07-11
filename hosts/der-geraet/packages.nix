@@ -44,6 +44,7 @@
     alejandra
     config.boot.kernelPackages.perf
     black
+    coolercontrol.coolercontrol-gui
     curlHTTP3
     dig
     distrobox
