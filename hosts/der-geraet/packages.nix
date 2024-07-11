@@ -44,8 +44,6 @@
     alejandra
     config.boot.kernelPackages.perf
     black
-    coolercontrol.coolercontrol-gui
-    coolercontrol.coolercontrold
     curlHTTP3
     dig
     distrobox
@@ -138,6 +136,7 @@
   programs._1password-gui.enable = true;
   programs._1password-gui.polkitPolicyOwners = ["phil"];
   programs._1password.enable = true;
+  programs.coolercontrol.enable = true;
   programs.direnv.enable = true;
   programs.firefox.enable = true;
   # required for sshfs
