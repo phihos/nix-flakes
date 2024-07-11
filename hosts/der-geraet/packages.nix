@@ -48,6 +48,7 @@
     dig
     distrobox
     docker-compose
+    fw-ectool
     fzf
     gcc
     git-crypt
