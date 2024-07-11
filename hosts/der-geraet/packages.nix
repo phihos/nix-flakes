@@ -45,6 +45,7 @@
     config.boot.kernelPackages.perf
     black
     coolercontrol.coolercontrol-gui
+    coolercontrol.coolercontrold
     curlHTTP3
     dig
     distrobox
