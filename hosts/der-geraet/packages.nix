@@ -143,6 +143,7 @@
   # required for sshfs
   programs.fuse.userAllowOther = true;
   programs.fw-fanctrl.enable = true;
+  programs.fw-fanctrl.config.defaultStrategy = "deaf";
   programs.git.enable = true;
   programs.git.lfs.enable = true;
   programs.gnupg.agent.enable = true;
