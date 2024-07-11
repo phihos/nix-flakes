@@ -98,6 +98,7 @@
     pstree
     ruby
     rubyPackages.ffi
+    s3fs
     slack
     sshfs
     sublime4
