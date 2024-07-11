@@ -79,6 +79,7 @@
     kubelogin-oidc
     kubetail
     libvirt
+    liquidctl
     lsof
     massif-visualizer
     meld
