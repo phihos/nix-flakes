@@ -140,6 +140,7 @@
   programs.coolercontrol.enable = true;
   programs.direnv.enable = true;
   programs.firefox.enable = true;
+  programs.chromium.enable = true;
   # required for sshfs
   programs.fuse.userAllowOther = true;
   programs.fw-fanctrl.enable = true;
