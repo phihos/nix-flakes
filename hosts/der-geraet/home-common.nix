@@ -140,6 +140,7 @@
     SSH_AUTH_SOCK = "${config.home.homeDirectory}/.1password/agent.sock";
     REQUESTS_CA_BUNDLE = "/etc/ssl/certs/ca-certificates.crt";
     SSL_CERT_FILE = "/etc/ssl/certs/ca-certificates.crt";
+    NIXOS_OZONE_WL = "1";
   };
   systemd.user.sessionVariables = config.home.sessionVariables;
 }
