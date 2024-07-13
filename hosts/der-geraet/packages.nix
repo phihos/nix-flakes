@@ -44,6 +44,7 @@
     alejandra
     config.boot.kernelPackages.perf
     black
+    chromium
     curlHTTP3
     dig
     distrobox
