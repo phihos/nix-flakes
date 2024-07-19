@@ -29,7 +29,7 @@
     })
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_8;
 
   nixpkgs.config.permittedInsecurePackages = [
     "openssl-1.1.1w"
@@ -190,6 +190,11 @@
     ];
   };
   virtualisation.libvirtd.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [
+    "phil"
+    "philipp-privat"
+  ];
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
