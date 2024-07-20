@@ -49,6 +49,7 @@
     dig
     distrobox
     docker-compose
+    freerdp
     fw-ectool
     fzf
     gcc
