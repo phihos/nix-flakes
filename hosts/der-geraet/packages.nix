@@ -53,6 +53,7 @@
     fw-ectool
     fzf
     gcc
+    gdb
     git-crypt
     gnome.gnome-tweaks
     gnome.networkmanager-openvpn
