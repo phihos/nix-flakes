@@ -107,7 +107,7 @@
     sshfs
     sublime4
     sublime-merge
-    thunderbird
+    thunderbirdPackages.thunderbird-128
     usbutils
     vagrant
     vault
