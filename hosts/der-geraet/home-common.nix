@@ -58,6 +58,7 @@
       "vsicons.dontShowNewVersionMessage" = true;
       "terminal.integrated.scrollback" = 1000;
       "workbench.iconTheme" = "vscode-icons";
+      "puppet.installType" = "pdk";
     };
     extensions = let
       vscode_ext_pks = with pkgs.vscode-extensions; [
