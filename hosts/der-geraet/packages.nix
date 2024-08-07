@@ -82,6 +82,10 @@
     kubelogin-oidc
     kubetail
     libvirt
+    libreoffice-qt
+    hunspell
+    hunspellDicts.de_DE
+    hunspellDicts.en_US
     liquidctl
     lsof
     massif-visualizer
@@ -147,7 +151,7 @@
   programs.chromium.enable = true;
   # required for sshfs
   programs.fuse.userAllowOther = true;
-  programs.fw-fanctrl.enable = true;
+  programs.fw-fanctrl.enable = false;
   programs.fw-fanctrl.config.defaultStrategy = "deaf";
   programs.git.enable = true;
   programs.git.lfs.enable = true;
