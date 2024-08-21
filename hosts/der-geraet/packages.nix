@@ -104,6 +104,7 @@
     pika-backup
     poetry
     postgresql
+    pre-commit
     pstree
     ruby
     rubyPackages.ffi
