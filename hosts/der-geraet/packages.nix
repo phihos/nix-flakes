@@ -45,6 +45,7 @@
     config.boot.kernelPackages.perf
     black
     chromium
+    copier
     curlHTTP3
     dig
     distrobox
