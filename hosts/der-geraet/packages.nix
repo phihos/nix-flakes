@@ -66,6 +66,7 @@
     gnumake
     grpc_cli
     grpcurl
+    helm-docs
     helmfile
     htop
     inetutils
