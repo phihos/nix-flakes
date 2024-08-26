@@ -124,6 +124,7 @@
     wget
     wrk
     yubioath-flutter
+    yq
     zoom-us
     # (vscode-with-extensions.override {
     #   vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
