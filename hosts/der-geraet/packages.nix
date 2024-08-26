@@ -101,6 +101,7 @@
     config.nur.repos.mloeper.openvpn3-indicator
     nodejs
     openssl
+    parallel
     pciutils
     pdk
     pika-backup
