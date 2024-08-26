@@ -42,6 +42,7 @@
     adoptopenjdk-icedtea-web
     adwaita-qt
     alejandra
+    argocd
     config.boot.kernelPackages.perf
     black
     chromium
