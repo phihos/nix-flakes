@@ -79,6 +79,7 @@
     jetbrains.pycharm-professional
     jetbrains.ruby-mine
     krew
+    kubeconform
     kubectl
     kubectx
     kubelogin-oidc
