@@ -29,7 +29,7 @@
     })
   ];
 
-  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_8;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_10;
 
   nixpkgs.config.permittedInsecurePackages = [
     "openssl-1.1.1w"
@@ -197,15 +197,17 @@
   };
   virtualisation.docker.enable = true;
   virtualisation.docker.package = pkgs.docker_26;
-  virtualisation.docker.daemon.settings = {
-    # use systemd-resolved DNS server
-    dns = [
-      "172.17.0.1"
-    ];
-  };
+  #virtualisation.docker.daemon.settings = {
+  #  # use systemd-resolved DNS server
+  #  dns = [
+  #    "172.17.0.1"
+  #  ];
+  #};
   virtualisation.libvirtd.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
+  #virtualisation.virtualbox.host.enable = true;
+  #virtualisation.virtualbox.host.enableExtensionPack = true;
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.draganddrop = true;
   users.extraGroups.vboxusers.members = [
     "phil"
     "philipp-privat"
