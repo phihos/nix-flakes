@@ -110,6 +110,7 @@
     postgresql
     pre-commit
     pstree
+    rpi-imager
     ruby
     rubyPackages.ffi
     s3fs
