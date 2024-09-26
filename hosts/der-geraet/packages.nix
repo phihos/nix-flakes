@@ -79,6 +79,7 @@
     jetbrains.phpstorm
     jetbrains.pycharm-professional
     jetbrains.ruby-mine
+    just
     krew
     kubeconform
     kubectl
