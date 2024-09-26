@@ -120,6 +120,7 @@
     sublime4
     sublime-merge
     terraform
+    terraform-docs
     terragrunt
     tflint
     thunderbird-128
