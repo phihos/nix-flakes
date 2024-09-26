@@ -121,6 +121,7 @@
     sublime-merge
     terraform
     terragrunt
+    tflint
     thunderbird-128
     usbutils
     vagrant
