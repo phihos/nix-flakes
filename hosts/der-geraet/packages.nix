@@ -118,6 +118,8 @@
     sshfs
     sublime4
     sublime-merge
+    terraform
+    terragrunt
     thunderbird-128
     usbutils
     vagrant
