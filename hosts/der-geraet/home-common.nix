@@ -64,6 +64,7 @@
       vscode_ext_pks = with pkgs.vscode-extensions; [
         bbenoist.nix
         eamodio.gitlens
+        hashicorp.terraform
         james-yu.latex-workshop
         k--kato.intellij-idea-keybindings
         kamadorueda.alejandra
