@@ -203,12 +203,12 @@
   };
   virtualisation.docker.enable = true;
   virtualisation.docker.package = pkgs.docker_26;
-  #virtualisation.docker.daemon.settings = {
-  #  # use systemd-resolved DNS server
-  #  dns = [
-  #    "172.17.0.1"
-  #  ];
-  #};
+  virtualisation.docker.daemon.settings = {
+    # use systemd-resolved DNS server
+    dns = [
+      "172.17.0.1"
+    ];
+  };
   virtualisation.libvirtd.enable = true;
   #virtualisation.virtualbox.host.enable = true;
   #virtualisation.virtualbox.host.enableExtensionPack = true;
