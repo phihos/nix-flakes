@@ -107,6 +107,7 @@
     pciutils
     pdk
     pika-backup
+    pinta
     poetry
     postgresql
     pre-commit
