@@ -115,6 +115,7 @@
     rpi-imager
     ruby
     rubyPackages.ffi
+    s3cmd
     s3fs
     slack
     sshfs
