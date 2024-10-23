@@ -126,6 +126,7 @@
     terragrunt
     tflint
     thunderbird-128
+    unzip
     usbutils
     vagrant
     vault
