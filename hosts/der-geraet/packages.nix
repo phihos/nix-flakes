@@ -80,6 +80,7 @@
     jetbrains.pycharm-professional
     jetbrains.ruby-mine
     just
+    jq
     krew
     kubeconform
     kubectl
