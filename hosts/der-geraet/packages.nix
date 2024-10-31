@@ -29,7 +29,7 @@
     })
   ];
 
-  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_10;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_11;
 
   nixpkgs.config.permittedInsecurePackages = [
     "openssl-1.1.1w"
@@ -51,6 +51,7 @@
     dig
     distrobox
     docker-compose
+    drawio
     freerdp
     fw-ectool
     fzf
