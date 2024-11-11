@@ -57,6 +57,7 @@
     fzf
     gcc
     gdb
+    gimp
     git-crypt
     gnome.gnome-tweaks
     gnome.networkmanager-openvpn
