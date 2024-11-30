@@ -63,7 +63,7 @@
     gnome.networkmanager-openvpn
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
-    gnomeExtensions.clipboard-indicator-2
+    gnomeExtensions.clipboard-indicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.utcclock
     gnumake
