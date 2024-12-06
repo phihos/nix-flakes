@@ -83,6 +83,7 @@
     jetbrains.ruby-mine
     just
     jq
+    kind
     krew
     kubeconform
     kubectl
