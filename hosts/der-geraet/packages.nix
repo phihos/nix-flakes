@@ -59,8 +59,8 @@
     gdb
     gimp
     git-crypt
-    gnome.gnome-tweaks
-    gnome.networkmanager-openvpn
+    gnome-tweaks
+    networkmanager-openvpn
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
     gnomeExtensions.clipboard-indicator
@@ -104,7 +104,7 @@
     networkmanager-openvpn
     nix-index
     nix-output-monitor
-    config.nur.repos.mloeper.openvpn3-indicator
+    #nur.repos.mloeper.openvpn3-indicator
     nodejs
     openssl
     parallel
@@ -132,7 +132,7 @@
     thunderbird-128
     unzip
     usbutils
-    vagrant
+    (vagrant.override {withLibvirt = false;})
     vault
     vim
     virt-manager
@@ -220,7 +220,7 @@
   virtualisation.virtualbox.host.enable = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
   virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.draganddrop = true;
+  virtualisation.virtualbox.guest.dragAndDrop = true;
   users.extraGroups.vboxusers.members = [
     "phil"
     "philipp-privat"
