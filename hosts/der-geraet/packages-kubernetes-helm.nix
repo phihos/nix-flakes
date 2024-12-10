@@ -10,6 +10,7 @@
         helm-diff
         helm-s3
         helm-git
+        helm-unittest
       ];
     };
 

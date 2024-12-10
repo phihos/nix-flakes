@@ -81,7 +81,6 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-
   hardware.pulseaudio.enable = false;
 
   # Scanning
@@ -107,6 +106,11 @@
   services.power-profiles-daemon.enable = true;
 
   services.fwupd.enable = true;
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+  };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
