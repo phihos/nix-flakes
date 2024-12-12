@@ -116,6 +116,7 @@
     postgresql
     pre-commit
     pstree
+    regctl
     rpi-imager
     ruby
     rubyPackages.ffi
