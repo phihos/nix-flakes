@@ -137,6 +137,7 @@
     vault
     vim
     virt-manager
+    vlc
     wget
     wrk
     yubioath-flutter
