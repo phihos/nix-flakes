@@ -43,6 +43,7 @@
     adwaita-qt
     alejandra
     argocd
+    audacity
     config.boot.kernelPackages.perf
     black
     chromium
