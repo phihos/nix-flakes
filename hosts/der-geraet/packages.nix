@@ -44,6 +44,7 @@
     alejandra
     argocd
     audacity
+    audio-recorder
     config.boot.kernelPackages.perf
     black
     chromium
@@ -66,7 +67,6 @@
     gnomeExtensions.caffeine
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.dash-to-dock
-    gnomeExtensions.gsconnect
     gnomeExtensions.utcclock
     gnumake
     grpc_cli
@@ -182,6 +182,10 @@
   programs.gnupg.agent.enable = true;
   programs.gnupg.agent.enableSSHSupport = false;
   programs.iftop.enable = true;
+  programs.kdeconnect = {
+    enable = true;
+    package = pkgs.gnomeExtensions.gsconnect;
+  };
   programs.mtr.enable = true;
   programs.openvpn3.enable = true;
   programs.steam = {
