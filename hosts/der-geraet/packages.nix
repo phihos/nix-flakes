@@ -99,6 +99,7 @@
     hunspellDicts.en_US
     liquidctl
     lsof
+    magic-wormhole
     massif-visualizer
     meld
     mitmproxy
