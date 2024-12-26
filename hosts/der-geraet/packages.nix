@@ -171,7 +171,10 @@
   programs._1password-gui.polkitPolicyOwners = ["phil"];
   programs._1password.enable = true;
   programs.coolercontrol.enable = true;
-  programs.direnv.enable = true;
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
   programs.firefox.enable = true;
   programs.chromium.enable = true;
   # required for sshfs
