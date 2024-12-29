@@ -107,6 +107,7 @@
     networkmanager-openvpn
     nix-index
     nix-output-monitor
+    nixpkgs-fmt
     #nur.repos.mloeper.openvpn3-indicator
     nodejs
     openssl
