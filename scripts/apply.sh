@@ -5,6 +5,8 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 pushd "${SCRIPT_DIR}/.."
 alejandra . &>/dev/null
 sudo nixos-rebuild switch --flake .
+sudo gtk-update-icon-cache
+xdg-desktop-menu forceupdate
 gen=$(nixos-rebuild list-generations | grep current)
 git commit -am "$gen"
 popd
