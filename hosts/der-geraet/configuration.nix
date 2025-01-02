@@ -42,6 +42,7 @@
     '';
   };
 
+  # Add symlinks for /bin/bash and the like.
   services.envfs.enable = true;
 
   # Set your time zone.

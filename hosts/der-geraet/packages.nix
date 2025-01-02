@@ -59,6 +59,7 @@
     gimp
     git-crypt
     gnome-tweaks
+    inkscape
     networkmanager-openvpn
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
