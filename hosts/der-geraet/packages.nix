@@ -176,6 +176,7 @@
   };
   programs.firefox.enable = true;
   programs.chromium.enable = true;
+  programs.evolution.enable = true;
   # required for sshfs
   programs.fuse.userAllowOther = true;
   programs.fw-fanctrl.enable = false;
