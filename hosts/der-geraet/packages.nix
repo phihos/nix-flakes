@@ -6,6 +6,7 @@
   ...
 }: {
   imports = [
+    ./packages-secret.nix
     ./packages-kubernetes-helm.nix
   ];
 
