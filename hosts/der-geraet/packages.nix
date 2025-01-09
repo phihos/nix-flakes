@@ -8,7 +8,6 @@
   imports = [
     ./packages-secret.nix
     ./packages-kubernetes-helm.nix
-    ./packages-zoom.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -146,8 +145,7 @@
     wrk
     yubioath-flutter
     yq
-    # Pinnes in packages-zoom.nix until screensharing is fixed
-    # zoom-us
+    zoom-us
     # (vscode-with-extensions.override {
     #   vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
     #     bbenoist.nix
