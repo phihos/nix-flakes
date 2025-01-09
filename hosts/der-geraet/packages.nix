@@ -1,13 +1,13 @@
-{
-  config,
-  pkgs,
-  nur,
-  inputs,
-  ...
+{ config
+, pkgs
+, nur
+, inputs
+, ...
 }: {
   imports = [
     ./packages-secret.nix
     ./packages-kubernetes-helm.nix
+    ./packages-zoom.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -18,7 +18,7 @@
         gnome-keyring = gprev.gnome-keyring.overrideAttrs (oldAttrs: {
           configureFlags =
             oldAttrs.configureFlags
-            or []
+              or [ ]
             ++ [
               "--disable-ssh-agent"
             ];
@@ -136,7 +136,7 @@
     thunderbird-128
     unzip
     usbutils
-    (vagrant.override {withLibvirt = false;})
+    (vagrant.override { withLibvirt = false; })
     vault
     vim
     virt-manager
@@ -145,7 +145,8 @@
     wrk
     yubioath-flutter
     yq
-    zoom-us
+    # Pinnes in packages-zoom.nix until screensharing is fixed
+    # zoom-us
     # (vscode-with-extensions.override {
     #   vscodeExtensions = with inputs.nix-vscode-extensions.extensions.${system}.vscode-marketplace; [
     #     bbenoist.nix
@@ -168,7 +169,7 @@
   ];
 
   programs._1password-gui.enable = true;
-  programs._1password-gui.polkitPolicyOwners = ["phil"];
+  programs._1password-gui.polkitPolicyOwners = [ "phil" ];
   programs._1password.enable = true;
   programs.adb.enable = true;
   programs.coolercontrol.enable = true;
