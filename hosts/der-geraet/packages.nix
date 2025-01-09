@@ -1,8 +1,9 @@
-{ config
-, pkgs
-, nur
-, inputs
-, ...
+{
+  config,
+  pkgs,
+  nur,
+  inputs,
+  ...
 }: {
   imports = [
     ./packages-secret.nix
@@ -18,7 +19,7 @@
         gnome-keyring = gprev.gnome-keyring.overrideAttrs (oldAttrs: {
           configureFlags =
             oldAttrs.configureFlags
-              or [ ]
+            or []
             ++ [
               "--disable-ssh-agent"
             ];
@@ -136,7 +137,7 @@
     thunderbird-128
     unzip
     usbutils
-    (vagrant.override { withLibvirt = false; })
+    (vagrant.override {withLibvirt = false;})
     vault
     vim
     virt-manager
@@ -169,7 +170,7 @@
   ];
 
   programs._1password-gui.enable = true;
-  programs._1password-gui.polkitPolicyOwners = [ "phil" ];
+  programs._1password-gui.polkitPolicyOwners = ["phil"];
   programs._1password.enable = true;
   programs.adb.enable = true;
   programs.coolercontrol.enable = true;
